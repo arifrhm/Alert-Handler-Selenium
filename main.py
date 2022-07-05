@@ -12,7 +12,10 @@ def test_website():
     entry_content =  driver.find_element(By.ID, 'alertButton')
     print(entry_content.accessible_name)
     entry_content.click()
-    time.sleep(30)
-    
+    time.sleep(2)
+    driver.switch_to.alert.accept()
+    time.sleep(8)
+
+
 if __name__ =="__main__" :
     test_website()
